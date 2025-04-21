@@ -6,33 +6,12 @@
   <title>Бизнес-Богиня™</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       font-family: 'Roboto', sans-serif;
       background: linear-gradient(135deg, #fff0f5, #ffe4e1);
       color: #333;
       margin: 0;
       padding: 0;
-    }
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 2s ease-in forwards;
-    }
-    .slide-up {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: slideUp 1.5s ease-out forwards;
-    }
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
-    @keyframes slideUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
     .hero {
       padding: 4rem;
@@ -43,12 +22,10 @@
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
       color: #d63384;
-      animation: fadeIn 2s ease-in;
     }
     .tagline {
       font-size: 1.25rem;
       margin-top: 1rem;
-      animation: fadeIn 3s ease-in;
     }
     .modules, .cta, .reviews {
       max-width: 800px;
@@ -57,7 +34,6 @@
       background: #fff;
       border-radius: 1rem;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      animation: slideUp 1.5s ease-out;
     }
     .modules h2, .cta h2 {
       color: #d63384;
@@ -69,7 +45,6 @@
     }
     .modules li {
       margin-bottom: 1.5rem;
-      animation: fadeIn 1s ease-in forwards;
     }
     .cta button {
       background: #d63384;
@@ -79,10 +54,8 @@
       font-size: 1rem;
       border-radius: 0.5rem;
       cursor: pointer;
-      transition: transform 0.3s ease, background 0.3s ease;
     }
     .cta button:hover {
-      transform: scale(1.05);
       background: #c82373;
     }
     .review-block {
@@ -95,10 +68,6 @@
       height: 80px;
       border-radius: 50%;
       margin-right: 1rem;
-      transition: transform 0.4s ease;
-    }
-    .review-block img:hover {
-      transform: rotate(5deg) scale(1.05);
     }
     .review-block p {
       font-style: italic;
@@ -111,7 +80,7 @@
     <p class="tagline">Манифестируй миллионы. Вдыхай изобилие. Плачь элегантно.</p>
   </div>
 
-  <div class="modules slide-up">
+  <div class="modules">
     <h2>Что ты получишь</h2>
     <ul>
       <li><strong>Модуль 1:</strong> Пробуждение Денежной Матки™ — танцуй богатство, визуализируй кредиты.</li>
@@ -122,13 +91,13 @@
     </ul>
   </div>
 
-  <div class="cta slide-up">
+  <div class="cta">
     <h2>Стань безграничной уже сегодня</h2>
     <p>Участие — всего <strong>99,000₽</strong> или 3 платежа по 33,333₽ (для гармонии во Вселенной).</p>
     <button>Войти в Круг Богинь ✨</button>
   </div>
 
-  <div class="reviews slide-up">
+  <div class="reviews">
     <div class="review-block">
       <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Daria">
       <p>"После курса я уволилась, развелась и теперь продаю PDF-файлы другим женщинам, которые сделали то же самое!" — Дарья, 32</p>
